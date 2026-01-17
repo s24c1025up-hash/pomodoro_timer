@@ -12,13 +12,13 @@
 ## インストール方法
 以下のコマンドをワークスペース（例: \`~/ros2_ws/src\`）で実行してください。
 
-\`\`\`bash
+```bash
 $ cd ~/ros2_ws/src
 $ git clone https://github.com/s24c1025up-hash/pomodoro_timer.git
 $ cd ~/ros2_ws
 $ colcon build --symlink-install
 $ source install/setup.bash
-\`\`\`
+```
 
 ---
 
@@ -27,9 +27,9 @@ $ source install/setup.bash
 ### 1. ノードの起動
 ターミナルで以下のコマンドを実行すると、タイマーが開始されます。
 
-\`\`\`bash
+```bash
 $ ros2 run pomodoro_timer timer
-\`\`\`
+```
 
 ### 2. 出力内容の確認
 実行すると、1秒ごとに現在の状態（作業中/休憩中）と残り時間が表示されます。
