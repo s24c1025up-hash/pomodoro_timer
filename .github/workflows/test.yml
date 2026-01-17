@@ -8,15 +8,15 @@ jobs:
       - uses: actions/checkout@v3
       - uses: ros-tooling/setup-ros@v0.7
         with:
-          required-ros-distro: humble
+          # ここを 'required-ros-distro' から 'ros-distro' に修正しました
+          ros-distro: humble
       - name: build and test
         run: |
           source /opt/ros/humble/setup.bash
-          # GitHub上のファイルを ~/ros2_ws/src/pomodoro_timer に配置
+          # フォルダ構成をGitHub上で再現
           mkdir -p ~/ros2_ws/src
           cp -r $GITHUB_WORKSPACE ~/ros2_ws/src/pomodoro_timer
           cd ~/ros2_ws
-          # ビルド
           colcon build
-          # テスト実行（フルパスで指定）
+          # テスト実行
           bash ~/ros2_ws/src/pomodoro_timer/test.bash
