@@ -34,16 +34,15 @@ $ ros2 run pomodoro_timer timer
 ### 2. 出力内容の確認
 実行すると、1秒ごとに現在の状態（作業中/休憩中）と残り時間が表示されます。
 
-\`\`\`text
+```bash
 [INFO] [pomodoro_timer]: 【作業中】 残り 25:00
 
 [INFO] [pomodoro_timer]: 【作業中】 残り 24:59
-...
 
 [INFO] [pomodoro_timer]: ★★★ 休憩/作業が切り替わりました ★★★
 
 [INFO] [pomodoro_timer]: 【休憩中】 残り 05:00
-\`\`\`
+```bash
 
 ---
 
