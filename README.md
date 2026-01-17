@@ -42,7 +42,7 @@ $ ros2 run pomodoro_timer timer
 [INFO] [pomodoro_timer]: ★★★ 休憩/作業が切り替わりました ★★★
 
 [INFO] [pomodoro_timer]: 【休憩中】 残り 05:00
-```bash
+```
 
 ---
 
