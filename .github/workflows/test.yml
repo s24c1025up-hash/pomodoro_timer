@@ -1,0 +1,17 @@
+name: test
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distro: humble
+      - name: build and test
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon build
+          # 作成したtest.bashを実行
+          bash ./src/pomodoro_timer/test.bash
