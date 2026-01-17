@@ -3,25 +3,27 @@
 
 # ROS 2環境の読み込み
 source /opt/ros/humble/setup.bash
+
+# ワークスペースの場所を特定（GitHub Actionsかローカルか）
+if [ -d "$GITHUB_WORKSPACE" ]; then
+    WORKSPACE_ROOT=$HOME/ros2_ws
+else
+    WORKSPACE_ROOT=$HOME/ros2_ws
+fi
+
+cd $WORKSPACE_ROOT
 source install/setup.bash
 
-# 1. ビルドの成否確認
-colcon build --packages-select pomodoro_timer
-if [ $? -ne 0 ]; then
-    echo "Build failed"
+# ノードをバックグラウンドで起動し、ログをファイルに保存
+timeout 10s ros2 run pomodoro_timer timer > /tmp/pomodoro_test.log 2>&1 &
+sleep 7
+
+# ログの中に「残り」という文字があるかチェック
+if grep -q "残り" /tmp/pomodoro_test.log; then
+    echo "テスト成功：タイマーの動作を確認しました。"
+    exit 0
+else
+    echo "テスト失敗：タイマーの出力が確認できませんでした。"
+    cat /tmp/pomodoro_test.log
     exit 1
 fi
-
-# 2. ノードが起動し、トピックが配信されるか確認
-# 5秒間ノードを動かして、トピックリストに /timer_status が出るかチェック
-timeout 5s ros2 run pomodoro_timer timer &
-sleep 2
-
-ros2 topic list | grep /timer_status
-if [ $? -ne 0 ]; then
-    echo "Topic /timer_status not found"
-    exit 1
-fi
-
-echo "Test passed!"
-exit 0

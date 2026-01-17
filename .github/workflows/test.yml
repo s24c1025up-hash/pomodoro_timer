@@ -12,6 +12,10 @@ jobs:
       - name: build and test
         run: |
           source /opt/ros/humble/setup.bash
+          # フォルダ構成をGitHub上で再現
+          mkdir -p ~/ros2_ws/src
+          cp -r $GITHUB_WORKSPACE ~/ros2_ws/src/pomodoro_timer
+          cd ~/ros2_ws
           colcon build
-          # 作成したtest.bashを実行
-          bash ./src/pomodoro_timer/test.bash
+          # テスト実行
+          bash ~/ros2_ws/src/pomodoro_timer/test.bash
