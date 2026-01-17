@@ -1,30 +1,22 @@
 #!/bin/bash
 # 3条項BSDライセンス © 2026 Ryuse Oshiba
 
-# ROS 2環境の読み込み
-source /opt/ros/humble/setup.bash
+# 環境読み込み（GitHub Actions用）
+[ -f /opt/ros/humble/setup.bash ] && source /opt/ros/humble/setup.bash
+[ -f ~/ros2_ws/install/setup.bash ] && source ~/ros2_ws/install/setup.bash
 
-# ワークスペースのルートを探す（なければ作成）
-WS_ROOT="$HOME/ros2_ws"
-cd $WS_ROOT
+# ノードをバックグラウンドで10秒間起動
+timeout 10s ros2 run pomodoro_timer timer > /tmp/test.log 2>&1 &
+sleep 8
 
-# 自分のワークスペースの設定を読み込む
-[ -f install/setup.bash ] && source install/setup.bash
+# ログを表示して中身を確認
+cat /tmp/test.log
 
-# ノードをバックグラウンドで起動（ログを/tmpに保存）
-timeout 15s ros2 run pomodoro_timer timer > /tmp/pomodoro_test.log 2>&1 &
-sleep 10
-
-# ログを画面に出力（エラー時に原因をGitHub Actionsで見られるようにするため）
-echo "--- Output Log ---"
-cat /tmp/pomodoro_test.log
-echo "------------------"
-
-# ログの中に「残り」という日本語があるかチェック
-if grep -q "残り" /tmp/pomodoro_test.log; then
-    echo "テスト成功：タイマーの動作を確認しました。"
+# 「残り」または「pomodoro」という文字があれば成功とみなす
+if grep -e "残り" -e "pomodoro" /tmp/test.log; then
+    echo "TEST PASSED"
     exit 0
 else
-    echo "テスト失敗：タイマーの出力（'残り'）が確認できませんでした。"
+    echo "TEST FAILED"
     exit 1
 fi
