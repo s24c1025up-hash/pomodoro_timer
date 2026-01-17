@@ -1,0 +1,21 @@
+[1.839s] Invoking command in '/home/shiba/ros2_ws/src/pomodoro_timer': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/pomodoro_timer build --build-base /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build install --record /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/install.log --single-version-externally-managed install_data
+[2.308s] running egg_info
+[2.309s] writing build/pomodoro_timer/pomodoro_timer.egg-info/PKG-INFO
+[2.313s] writing dependency_links to build/pomodoro_timer/pomodoro_timer.egg-info/dependency_links.txt
+[2.313s] writing entry points to build/pomodoro_timer/pomodoro_timer.egg-info/entry_points.txt
+[2.314s] writing requirements to build/pomodoro_timer/pomodoro_timer.egg-info/requires.txt
+[2.314s] writing top-level names to build/pomodoro_timer/pomodoro_timer.egg-info/top_level.txt
+[2.320s] reading manifest file 'build/pomodoro_timer/pomodoro_timer.egg-info/SOURCES.txt'
+[2.323s] writing manifest file 'build/pomodoro_timer/pomodoro_timer.egg-info/SOURCES.txt'
+[2.324s] running build
+[2.324s] running build_py
+[2.325s] running install
+[2.326s] running install_lib
+[2.330s] running install_data
+[2.330s] running install_egg_info
+[2.334s] removing '/home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer-0.0.0-py3.10.egg-info' (and everything under it)
+[2.335s] Copying build/pomodoro_timer/pomodoro_timer.egg-info to /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer-0.0.0-py3.10.egg-info
+[2.339s] running install_scripts
+[2.387s] Installing timer script to /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/pomodoro_timer
+[2.387s] writing list of installed files to '/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/install.log'
+[2.435s] Invoked command in '/home/shiba/ros2_ws/src/pomodoro_timer' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/pomodoro_timer build --build-base /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build install --record /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/install.log --single-version-externally-managed install_data

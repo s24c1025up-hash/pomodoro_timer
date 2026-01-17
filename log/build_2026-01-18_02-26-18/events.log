@@ -1,0 +1,50 @@
+[0.000000] (-) TimerEvent: {}
+[0.000845] (pomodoro_timer) JobQueued: {'identifier': 'pomodoro_timer', 'dependencies': OrderedDict()}
+[0.001700] (pomodoro_timer) JobStarted: {'identifier': 'pomodoro_timer'}
+[0.099938] (-) TimerEvent: {}
+[0.201189] (-) TimerEvent: {}
+[0.302421] (-) TimerEvent: {}
+[0.403648] (-) TimerEvent: {}
+[0.504994] (-) TimerEvent: {}
+[0.607121] (-) TimerEvent: {}
+[0.708438] (-) TimerEvent: {}
+[0.809589] (-) TimerEvent: {}
+[0.910878] (-) TimerEvent: {}
+[1.012181] (-) TimerEvent: {}
+[1.113618] (-) TimerEvent: {}
+[1.215026] (-) TimerEvent: {}
+[1.316405] (-) TimerEvent: {}
+[1.417067] (-) TimerEvent: {}
+[1.518093] (-) TimerEvent: {}
+[1.618975] (-) TimerEvent: {}
+[1.720253] (-) TimerEvent: {}
+[1.821655] (-) TimerEvent: {}
+[1.833134] (pomodoro_timer) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/pomodoro_timer', 'build', '--build-base', '/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build', 'install', '--record', '/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/shiba/ros2_ws/src/pomodoro_timer', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'shiba', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'CONDA_BACKUP_QT_XCB_GL_INTEGRATION': '', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/shiba', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/shiba/ros2_ws/src/pomodoro_timer', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CE_M': '', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', '_CONDA_ROOT': '/home/shiba/anaconda3', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/shiba/ros2_ws/src/pomodoro_timer/install:/home/shiba/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'shiba', 'NAME': 'LAPTOP-PORQFSVT', 'WSL_INTEROP': '/run/WSL/11394_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/home/shiba/anaconda3/bin:/home/shiba/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Users/shiba/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/shiba/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'QT_XCB_GL_INTEGRATION': 'none', 'GSETTINGS_SCHEMA_DIR': '/home/shiba/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer:/home/shiba/ros2_ws/install/pomodoro_timer:/home/shiba/ros2_ws/install/mypkg:/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/shiba/anaconda3/bin/python', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', '_CONDA_EXE': '/home/shiba/anaconda3/bin/conda', 'PWD': '/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer', 'CONDA_EXE': '/home/shiba/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages:/home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages:/home/shiba/ros2_ws/build/pomodoro_timer:/home/shiba/ros2_ws/install/pomodoro_timer/lib/python3.10/site-packages:/home/shiba/ros2_ws/build/mypkg:/home/shiba/ros2_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/shiba/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[1.922433] (-) TimerEvent: {}
+[2.023816] (-) TimerEvent: {}
+[2.125160] (-) TimerEvent: {}
+[2.226511] (-) TimerEvent: {}
+[2.309659] (pomodoro_timer) StdoutLine: {'line': b'running egg_info\n'}
+[2.310827] (pomodoro_timer) StdoutLine: {'line': b'writing build/pomodoro_timer/pomodoro_timer.egg-info/PKG-INFO\n'}
+[2.314037] (pomodoro_timer) StdoutLine: {'line': b'writing dependency_links to build/pomodoro_timer/pomodoro_timer.egg-info/dependency_links.txt\n'}
+[2.314636] (pomodoro_timer) StdoutLine: {'line': b'writing entry points to build/pomodoro_timer/pomodoro_timer.egg-info/entry_points.txt\n'}
+[2.315092] (pomodoro_timer) StdoutLine: {'line': b'writing requirements to build/pomodoro_timer/pomodoro_timer.egg-info/requires.txt\n'}
+[2.315676] (pomodoro_timer) StdoutLine: {'line': b'writing top-level names to build/pomodoro_timer/pomodoro_timer.egg-info/top_level.txt\n'}
+[2.321282] (pomodoro_timer) StdoutLine: {'line': b"reading manifest file 'build/pomodoro_timer/pomodoro_timer.egg-info/SOURCES.txt'\n"}
+[2.324442] (pomodoro_timer) StdoutLine: {'line': b"writing manifest file 'build/pomodoro_timer/pomodoro_timer.egg-info/SOURCES.txt'\n"}
+[2.325243] (pomodoro_timer) StdoutLine: {'line': b'running build\n'}
+[2.325560] (pomodoro_timer) StdoutLine: {'line': b'running build_py\n'}
+[2.326225] (pomodoro_timer) StdoutLine: {'line': b'running install\n'}
+[2.326632] (-) TimerEvent: {}
+[2.327095] (pomodoro_timer) StdoutLine: {'line': b'running install_lib\n'}
+[2.331562] (pomodoro_timer) StdoutLine: {'line': b'running install_data\n'}
+[2.332040] (pomodoro_timer) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.335785] (pomodoro_timer) StdoutLine: {'line': b"removing '/home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.336858] (pomodoro_timer) StdoutLine: {'line': b'Copying build/pomodoro_timer/pomodoro_timer.egg-info to /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer-0.0.0-py3.10.egg-info\n'}
+[2.341009] (pomodoro_timer) StdoutLine: {'line': b'running install_scripts\n'}
+[2.388040] (pomodoro_timer) StdoutLine: {'line': b'Installing timer script to /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/pomodoro_timer\n'}
+[2.388999] (pomodoro_timer) StdoutLine: {'line': b"writing list of installed files to '/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/install.log'\n"}
+[2.427170] (-) TimerEvent: {}
+[2.436210] (pomodoro_timer) CommandEnded: {'returncode': 0}
+[2.482863] (pomodoro_timer) JobEnded: {'identifier': 'pomodoro_timer', 'rc': 0}
+[2.486668] (-) EventReactorShutdown: {}

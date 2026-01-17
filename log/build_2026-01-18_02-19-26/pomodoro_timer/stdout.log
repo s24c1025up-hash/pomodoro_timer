@@ -1,0 +1,35 @@
+running egg_info
+creating build/pomodoro_timer/pomodoro_timer.egg-info
+writing build/pomodoro_timer/pomodoro_timer.egg-info/PKG-INFO
+writing dependency_links to build/pomodoro_timer/pomodoro_timer.egg-info/dependency_links.txt
+writing entry points to build/pomodoro_timer/pomodoro_timer.egg-info/entry_points.txt
+writing requirements to build/pomodoro_timer/pomodoro_timer.egg-info/requires.txt
+writing top-level names to build/pomodoro_timer/pomodoro_timer.egg-info/top_level.txt
+writing manifest file 'build/pomodoro_timer/pomodoro_timer.egg-info/SOURCES.txt'
+reading manifest file 'build/pomodoro_timer/pomodoro_timer.egg-info/SOURCES.txt'
+writing manifest file 'build/pomodoro_timer/pomodoro_timer.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build
+creating /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build/lib
+creating /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build/lib/pomodoro_timer
+copying pomodoro_timer/__init__.py -> /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build/lib/pomodoro_timer
+copying pomodoro_timer/timer_node.py -> /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build/lib/pomodoro_timer
+running install
+running install_lib
+creating /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer
+copying /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build/lib/pomodoro_timer/__init__.py -> /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer
+copying /home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/build/lib/pomodoro_timer/timer_node.py -> /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer
+byte-compiling /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer/timer_node.py to timer_node.cpython-310.pyc
+running install_data
+creating /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/share/ament_index
+creating /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/share/ament_index/resource_index
+creating /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/share/ament_index/resource_index/packages
+copying resource/pomodoro_timer -> /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/share/ament_index/resource_index/packages
+copying package.xml -> /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/share/pomodoro_timer
+running install_egg_info
+Copying build/pomodoro_timer/pomodoro_timer.egg-info to /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/python3.10/site-packages/pomodoro_timer-0.0.0-py3.10.egg-info
+running install_scripts
+Installing timer script to /home/shiba/ros2_ws/src/pomodoro_timer/install/pomodoro_timer/lib/pomodoro_timer
+writing list of installed files to '/home/shiba/ros2_ws/src/pomodoro_timer/build/pomodoro_timer/install.log'

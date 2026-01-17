@@ -1,7 +1,7 @@
 #  pomodoro_timer
 [![test](https://github.com/s24c1025up-hash/pomodoro_timer/actions/workflows/test.yml/badge.svg)](https://github.com/s24c1025up-hash/pomodoro_timer/actions/workflows/test.yml)
 
-**集中力を最大化させるための、ROS 2ポポドーロ・タイマーパッケージです。**
+**集中力を最大化させるための、ROS 2ポモドーロ・タイマーパッケージです。**
 
 ---
 

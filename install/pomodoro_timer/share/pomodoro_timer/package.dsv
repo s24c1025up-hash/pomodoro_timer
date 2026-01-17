@@ -1,0 +1,6 @@
+source;share/pomodoro_timer/hook/pythonpath.ps1
+source;share/pomodoro_timer/hook/pythonpath.dsv
+source;share/pomodoro_timer/hook/pythonpath.sh
+source;share/pomodoro_timer/hook/ament_prefix_path.ps1
+source;share/pomodoro_timer/hook/ament_prefix_path.dsv
+source;share/pomodoro_timer/hook/ament_prefix_path.sh
