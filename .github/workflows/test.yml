@@ -6,19 +6,20 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+      # ROS 2環境のセットアップ
       - uses: ros-tooling/setup-ros@v0.7
         with:
-          ros-distro: humble
+          required-ros-distro: humble
       - name: build and test
         run: |
-          # ROS 2環境の読み込み
+          # インストールされたROSの環境を読み込み
           source /opt/ros/humble/setup.bash
-          # フォルダ構成をGitHub上で再現
+          # フォルダ構成の再現
           mkdir -p ~/ros2_ws/src
           cp -r $GITHUB_WORKSPACE ~/ros2_ws/src/pomodoro_timer
           cd ~/ros2_ws
-          # ビルド実行
+          # ビルド
           colcon build
-          # 自分の環境を読み込んでからテスト実行
+          # 自作テストの実行
           source install/setup.bash
           bash ~/ros2_ws/src/pomodoro_timer/test.bash
