@@ -1,9 +1,3 @@
-# pomodor_timer
-cd ~/ros2_ws/src/pomodoro_timer
-
-# 「cat << 'EOF' > ファイル名」を使うと、
-# 次の EOF が来るまでの内容をそのままファイルに書き込めます。
-cat << 'EOF' > README.md
 #  pomodoro_timer
 [![test](https://github.com/s24c1025up-hash/pomodoro_timer/actions/workflows/test.yml/badge.svg)](https://github.com/s24c1025up-hash/pomodoro_timer/actions/workflows/test.yml)
 
@@ -42,9 +36,12 @@ $ ros2 run pomodoro_timer timer
 
 \`\`\`text
 [INFO] [pomodoro_timer]: 【作業中】 残り 25:00
+
 [INFO] [pomodoro_timer]: 【作業中】 残り 24:59
 ...
+
 [INFO] [pomodoro_timer]: ★★★ 休憩/作業が切り替わりました ★★★
+
 [INFO] [pomodoro_timer]: 【休憩中】 残り 05:00
 \`\`\`
 
@@ -67,5 +64,4 @@ $ ros2 run pomodoro_timer timer
 ##  謝辞
 - このパッケージのディレクトリ構成およびテスト環境は、千葉工業大学 ロボットシステム学2025の講義資料を参考にしています。
     - [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
-EOF
 
