@@ -4,26 +4,27 @@
 # ROS 2環境の読み込み
 source /opt/ros/humble/setup.bash
 
-# ワークスペースの場所を特定（GitHub Actionsかローカルか）
-if [ -d "$GITHUB_WORKSPACE" ]; then
-    WORKSPACE_ROOT=$HOME/ros2_ws
-else
-    WORKSPACE_ROOT=$HOME/ros2_ws
-fi
+# ワークスペースのルートを探す（なければ作成）
+WS_ROOT="$HOME/ros2_ws"
+cd $WS_ROOT
 
-cd $WORKSPACE_ROOT
-source install/setup.bash
+# 自分のワークスペースの設定を読み込む
+[ -f install/setup.bash ] && source install/setup.bash
 
-# ノードをバックグラウンドで起動し、ログをファイルに保存
-timeout 10s ros2 run pomodoro_timer timer > /tmp/pomodoro_test.log 2>&1 &
-sleep 7
+# ノードをバックグラウンドで起動（ログを/tmpに保存）
+timeout 15s ros2 run pomodoro_timer timer > /tmp/pomodoro_test.log 2>&1 &
+sleep 10
 
-# ログの中に「残り」という文字があるかチェック
+# ログを画面に出力（エラー時に原因をGitHub Actionsで見られるようにするため）
+echo "--- Output Log ---"
+cat /tmp/pomodoro_test.log
+echo "------------------"
+
+# ログの中に「残り」という日本語があるかチェック
 if grep -q "残り" /tmp/pomodoro_test.log; then
     echo "テスト成功：タイマーの動作を確認しました。"
     exit 0
 else
-    echo "テスト失敗：タイマーの出力が確認できませんでした。"
-    cat /tmp/pomodoro_test.log
+    echo "テスト失敗：タイマーの出力（'残り'）が確認できませんでした。"
     exit 1
 fi
